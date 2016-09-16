@@ -1,0 +1,35 @@
+mixin school(sch)
+  .w3-container.w3-card-2.w3-white.w3-round.w3-margin
+    br/
+    // img.w3-left.w3-circle.w3-margin-right(src="/img/avatar2.png", alt="Avatar", style="width:60px")
+    // span.w3-right.w3-opacity 1 min
+    h4 sch.name
+    // br/
+    hr.w3-clear
+
+    button.w3-btn.w3-theme-d1.w3-margin-bottom(type="button") <i class="fa fa-thumbs-up"></i>  Like
+    button.w3-btn.w3-theme-d2.w3-margin-bottom(type="button") <i class="fa fa-comment"></i>  Comment
+
+.w3-container.w3-card-2.w3-white.w3-round.w3-margin
+  br/
+  // img.w3-left.w3-circle.w3-margin-right(src="/img/avatar2.png", alt="Avatar", style="width:60px")
+  // span.w3-right.w3-opacity 1 min
+  h3 Escolas
+  // br/
+  hr.w3-clear
+
+  for schl in schools
+    +school(schl)
+
+  button.w3-btn.w3-theme-d1.w3-margin-bottom(id="add-school", type="button", onclick="document.getElementById('school-form').style.display='block'")
+    i.fa.fa-plus-square
+    |  Escola
+  // button.w3-btn.w3-theme-d1.w3-margin-bottom(type="button") <i class="fa fa-thumbs-up"></i>  Like
+  // button.w3-btn.w3-theme-d2.w3-margin-bottom(type="button") <i class="fa fa-comment"></i>  Comment
+
+// Modal Form
+.w3-modal(id="school-form")
+  .w3-modal-content
+    .w3-container
+      span.w3-closebtn(onclick="document.getElementById('school-form').style.display='none'") &times;
+      | Teste

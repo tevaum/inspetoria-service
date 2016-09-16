@@ -1,0 +1,19 @@
+extends ./layout.jade
+
+block left
+  include ./components/profile.jade
+
+block middle
+  include ./angular.jade
+
+block right
+  include ./layout-right.jade
+
+block scripts
+  script(src="node_modules/core-js/client/shim.min.js")
+  script(src="node_modules/zone.js/dist/zone.js")
+  script(src="node_modules/reflect-metadata/Reflect.js")
+  script(src="node_modules/systemjs/dist/system.src.js")
+  script(src="systemjs.config.js")
+  script.
+    System.import('app').catch(function(err){console.error(err); });

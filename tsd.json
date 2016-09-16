@@ -1,0 +1,45 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "express/express.d.ts": {
+      "commit": "1b21ed5d2ed3afb3b2be9a3ef8b17ae2a52a4c27"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "1b21ed5d2ed3afb3b2be9a3ef8b17ae2a52a4c27"
+    },
+    "express-serve-static-core/express-serve-static-core.d.ts": {
+      "commit": "1b21ed5d2ed3afb3b2be9a3ef8b17ae2a52a4c27"
+    },
+    "mime/mime.d.ts": {
+      "commit": "1b21ed5d2ed3afb3b2be9a3ef8b17ae2a52a4c27"
+    },
+    "node/node.d.ts": {
+      "commit": "1b21ed5d2ed3afb3b2be9a3ef8b17ae2a52a4c27"
+    },
+    "bluebird/bluebird.d.ts": {
+      "commit": "e65947027120a0dc77723266906e4ce6c28bd725"
+    },
+    "jade/jade.d.ts": {
+      "commit": "49d80420c0120e9d8e33c15a2d353e97d131362a"
+    },
+    "passport/passport.d.ts": {
+      "commit": "1b21ed5d2ed3afb3b2be9a3ef8b17ae2a52a4c27"
+    },
+    "express-session/express-session.d.ts": {
+      "commit": "43b79e1dd8e5f37eb37a64d329f967ad0cc33e56"
+    },
+    "cookie-parser/cookie-parser.d.ts": {
+      "commit": "43b79e1dd8e5f37eb37a64d329f967ad0cc33e56"
+    },
+    "body-parser/body-parser.d.ts": {
+      "commit": "43b79e1dd8e5f37eb37a64d329f967ad0cc33e56"
+    },
+    "passport-facebook/passport-facebook.d.ts": {
+      "commit": "43b79e1dd8e5f37eb37a64d329f967ad0cc33e56"
+    }
+  }
+}

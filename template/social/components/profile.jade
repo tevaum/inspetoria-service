@@ -1,0 +1,24 @@
+// Profile
+.w3-card-2.w3-round.w3-white
+  .w3-container
+    h4.w3-center #{user.alias}
+    p.w3-center
+      img.w3-circle(src="http://graph.facebook.com/#{user.facebook_id}/picture?type=large", style="width:106px; height: 106px;" alt="Avatar")
+    hr/
+    if user.email
+      p
+        i.fa.fa-envelope.fa-fw.w3-margin-right.w3-text-theme
+        | #{user.email}
+    if user.work
+      p
+        i.fa.fa-briefcase.fa-fw.w3-margin-right.w3-text-theme
+        | #{user.work[0].position.name}
+    if user.location
+      p
+        i.fa.fa-home.fa-fw.w3-margin-right.w3-text-theme
+        | #{user.location.name}
+    if user.birthday
+      p
+        i.fa.fa-birthday-cake.fa-fw.w3-margin-right.w3-text-theme
+        | #{user.birthday}
+br

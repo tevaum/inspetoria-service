@@ -1,0 +1,59 @@
+include ./components/profile.jade
+
+// Accordion
+.w3-card-2.w3-round
+  .w3-accordion.w3-white
+    button.w3-btn-block.w3-theme-l1.w3-left-align(onclick="myFunction('Demo1')")
+      i.fa.fa-circle-o-notch.fa-fw.w3-margin-right
+      | My Groups
+    .w3-accordion-content.w3-container(id="Demo1")
+      p Some text...
+    button.w3-btn-block.w3-theme-l1.w3-left-align(onclick="myFunction('Demo2')")
+      i.fa.fa-calendar-check-o.fa-fw.w3-margin-right
+      | My Events
+    .w3-accordion-content.w3-container(id="Demo2")
+      p Some other text...
+    button.w3-btn-block.w3-theme-l1.w3-left-align(onclick="myFunction('Demo3')")
+      i.fa.fa-users.fa-fw.w3-margin-right
+      | My Photos
+    .w3-accordion-content.w3-container(id="Demo3")
+      .w3-row-padding
+        br/
+        .w3-half
+          img.w3-margin-bottom(src="/img/lights.jpg", style="width:100%")
+        .w3-half
+          img.w3-margin-bottom(src="/img/nature.jpg", style="width:100%")
+        .w3-half
+          img.w3-margin-bottom(src="/img/mountains.jpg", style="width:100%")
+        .w3-half
+          img.w3-margin-bottom(src="/img/forest.jpg", style="width:100%")
+        .w3-half
+          img.w3-margin-bottom(src="/img/nature.jpg", style="width:100%")
+        .w3-half
+          img.w3-margin-bottom(src="/img/fjords.jpg", style="width:100%")
+br/
+
+// Interests
+.w3-card-2.w3-round.w3-white.w3-hide-small
+  .w3-container
+    p Interests
+    p
+      span.w3-tag.w3-small.w3-theme-d5 News
+      span.w3-tag.w3-small.w3-theme-d4 W3Schools
+      span.w3-tag.w3-small.w3-theme-d3 Labels
+      span.w3-tag.w3-small.w3-theme-d2 Games
+      span.w3-tag.w3-small.w3-theme-d1 Friends
+      span.w3-tag.w3-small.w3-theme Games
+      span.w3-tag.w3-small.w3-theme-l1 Friends
+      span.w3-tag.w3-small.w3-theme-l2 Food
+      span.w3-tag.w3-small.w3-theme-l3 Design
+      span.w3-tag.w3-small.w3-theme-l4 Art
+      span.w3-tag.w3-small.w3-theme-l5 Photos
+br/
+
+// Alert Box
+.w3-container.w3-round.w3-theme-l4.w3-border.w3-theme-border.w3-margin-bottom.w3-hide-small
+  span.w3-hover-text-grey.w3-closebtn(onclick="this.parentElement.style.display='none'")
+    i.fa.fa-remove
+  p <strong>Hey!</strong>
+  p People are looking at your profile. Find out who.

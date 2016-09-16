@@ -1,0 +1,28 @@
+{
+  "name": "inspetoria-service",
+  "version": "0.1.0",
+  "description": "_Inspetoria Online_ is a web application to help my wife with her job of visiting schools to check if they are following State's legislation (and advise them in case they're not).",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.1.1",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express-session": "^1.14.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^3.24.1",
+    "sqlite3": "^3.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "test -f server.js && node server || echo server.js not found. run: tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tevaum/inspetoria-service"
+  },
+  "author": "Estêvão Samuel Procópio Amaral",
+  "license": "AGPL",
+  "bugs": {
+    "url": "https://github.com/tevaum/inspetoria-service/issues"
+  }
+}
